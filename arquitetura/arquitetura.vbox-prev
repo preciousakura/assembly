@@ -6,7 +6,7 @@
 ** Use VBoxManage or the VirtualBox Manager GUI to make changes.
 -->
 <VirtualBox xmlns="http://www.virtualbox.org/" version="1.15-windows">
-  <Machine uuid="{42b754a9-1dd7-4e57-a9a7-f41ec8775f27}" name="arquitetura" OSType="Other" snapshotFolder="Snapshots" lastStateChange="2022-07-13T04:31:27Z">
+  <Machine uuid="{42b754a9-1dd7-4e57-a9a7-f41ec8775f27}" name="arquitetura" OSType="Other" snapshotFolder="Snapshots" lastStateChange="2022-07-13T05:34:52Z">
     <MediaRegistry>
       <FloppyImages>
         <Image uuid="{9540da7d-7062-447b-995e-ff65699499e8}" location="C:/Users/WZETTA/Desktop/arquiteturax86/tecla.img"/>
@@ -14,6 +14,7 @@
         <Image uuid="{92b65f60-3d24-4f4d-b854-65bbaa05f985}" location="C:/Users/WZETTA/Desktop/arquiteturax86/teste.img"/>
         <Image uuid="{9224a5d8-b6f9-40d7-8940-fd1705ec4f08}" location="C:/Users/WZETTA/Desktop/arquiteturax86/q1/out.img"/>
         <Image uuid="{541d5520-a94e-487c-acfa-cda61f037eec}" location="C:/Users/WZETTA/Desktop/arquiteturax86/questoes/q3/q3.img"/>
+        <Image uuid="{57f3bdd4-0482-40b5-8e94-bde67fe01cfc}" location="C:/Users/WZETTA/Desktop/arquiteturax86/questoes/q4/q4.img"/>
       </FloppyImages>
     </MediaRegistry>
     <ExtraData>
@@ -56,7 +57,7 @@
       </StorageController>
       <StorageController name="Floppy" type="I82078" PortCount="1" useHostIOCache="true" Bootable="true">
         <AttachedDevice type="Floppy" hotpluggable="false" port="0" device="0">
-          <Image uuid="{541d5520-a94e-487c-acfa-cda61f037eec}"/>
+          <Image uuid="{57f3bdd4-0482-40b5-8e94-bde67fe01cfc}"/>
         </AttachedDevice>
       </StorageController>
     </StorageControllers>

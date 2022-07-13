@@ -79,13 +79,13 @@ color: push si
        push cx
 
        mov dx, 0
-       mov ax, cx
+       mov ax, [di]
        mov cx, 320
        mul cx 
 
        pop cx
 
-       add ax, [di]
+       add ax, cx
        mov di, ax
        mov [es:di], byte(15)
 
@@ -95,7 +95,7 @@ color: push si
        pop si
        ret
 
-fim: hlt
+fim: hlt    
 
 numero: dw 0
 str: 

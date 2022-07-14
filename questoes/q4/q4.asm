@@ -5,118 +5,164 @@ mov ax, 0
 mov ds, ax
 cli
 
-call cgcolor
+mov ax, 0xA000
+mov es, ax
 
-cgcolor: push ax
-         push bx 
-         push cx 
-         push dx ; color
+mov ah, 0x00 
+mov al, 0x13 
+int 0x10  
 
-         mov cx, 0
+mov si, line
+mov di, currentcolor
+call chgplt
 
- loopcg: cmp cx, 256
-         je cgend
+call clrln
 
-         cmp dl, 64
-         jmp chcolor
+jmp fim
 
-coloring:push dx
-         mov dx, 0x03c8
-         mov al, cl
-         out dx, al
-         mov dx, 0x03c9
-
-         mov bl, 'g'
-         cmp bl, flagcolor
-         je grcolor
-
-         mov bl, 'b'
-         cmp bl, flagcolor
-         je blcolor
-
-redcolor: mov al, dl ; color
-          out dx, al
-        
-          mov al, 0
-          out dx, al
-        
-          mov al, 0
-          out dx, al
-
-          jmp keepon
-
- grcolor: mov al, 0
-          out dx, al
-        
-          mov al, dl ; color
-          out dx, al
-        
-          mov al, 0
-          out dx, al
-
-          jmp keepon
-
-blcolor : mov al, 0
-          out dx, al
-        
-          mov al, 0
-          out dx, al
-        
-          mov al, dl ; color
-          out dx, al
-        
- keepon: inc dl
-         inc cx
-         pop dx
-         jmp loopcg
-
-chcolor: mov bx, flagcolor
-         cmp [bx], byte 'r'
-         je chred
-         cmp [bx], byte 'g'
-         je chblue
-         cmp [bx], byte 'b'
-         je chgreen
-  chred: mov [bx], byte 'b'
-         jmp chend
- chblue: mov [bx], byte 'g'
-         jmp chend
-chgreen: mov [bx], byte 'r' 
-  chend: mov dx, 0
-         jmp coloring
-
-  cgend: pop dx
-         pop cx
-         pop bx
-         pop ax
-         ret
-
-pintar: push ax
-        push bx
+chgplt: push di
+        push si
+        push ax
         push dx
+        push cx
 
-        mov ah, 0x00 
-        mov al, 0x13
-        int 0x10
+        mov cx, 0
 
-       push cx
-       push ax
+chloop: mov ah, 0
+        mov dx, 0x03c8
+        mov al, [si]
+        out dx, al
+        mov dx, 0x03c9
 
-       mov dx, 0
-       mov ax, cx
-       mov cx, 320
-       mul cx 
-       
-       pop ax
-       pop cx
-    lp: cmp bx, cx
-        je endps
-        mov [es:di], byte(15)
- endps: pop dx
-        pop bx
+clrcmp: cmp [di], byte 'g'
+        je grnclr
+
+        cmp [di], byte 'b'
+        je blclr
+
+        cmp [di], byte 'y'
+        je yclr
+
+ rdclr: mov al, cl
+        out dx, al
+        
+        mov al, 0
+        out dx, al
+        
+        mov al, 0
+        out dx, al
+
+        jmp rgbend
+
+grnclr: mov al, 0
+        out dx, al
+        
+        mov al, cl
+        out dx, al
+        
+        mov al, 0
+        out dx, al
+
+        jmp rgbend
+
+ blclr: mov al, 0
+        out dx, al
+        
+        mov al, 0
+        out dx, al
+        
+        mov al, cl
+        out dx, al
+
+        jmp rgbend
+
+  yclr: mov al, cl
+        out dx, al
+        
+        mov al, cl
+        out dx, al
+        
+        mov al, 0
+        out dx, al
+
+rgbend: mov ax, [si]
+        cmp ax, 255
+        je chgend
+        cmp cx, 63
+        je chcolor
+  test: inc cx
+        inc ax
+        mov [si], ax
+        jmp chloop
+
+chcolor:cmp [di], byte 'r'
+        je cred
+
+        cmp [di], byte 'g'
+        je cgrn
+
+        cmp [di], byte 'b'
+        je cble
+
+        cmp [di], byte 'y'
+        je cble
+
+cred: mov [di], byte 'g'
+      mov cx, 0
+      jmp test
+      
+cgrn: mov [di], byte 'b'
+      mov cx, 0
+      jmp test
+
+cble: mov [di], byte 'y'
+      mov cx, 0
+      jmp test
+
+chgend: pop cx
+        pop dx
         pop ax
+        pop si
+        pop di
+        ret
 
-flagcolor: db 'r'
+clrln:push ax
+      push di
+      push bx
+      push si
+      push cx
+      push dx
+
+      mov cx, 0
+clinc:cmp cx, 256
+      je clrfm
+      mov ax, cx
+      mov bx, 320
+      mul bx
+      mov bx, ax
+
+      sub ax, 320
+      mov di, ax
+
+loop: mov [es:di], cl
+      inc di
+      cmp di, bx
+      je lpend
+      jmp loop
+lpend:inc cx
+      jmp clinc
+clrfm:pop dx
+      pop cx
+      pop si
+      pop bx
+      pop di
+      pop ax
+      ret
+
+fim: hlt
+
+line: dw 0
+currentcolor: db 'r'
 
 times 510 - ($ - $$) db 0
 dw 0xaa55

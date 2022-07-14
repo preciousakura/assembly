@@ -1,77 +1,77 @@
-2ea0.4a10: Log file opened: 6.1.34r150636 g_hStartupLog=0000000000000088 g_uNtVerCombined=0xa055f000
-2ea0.4a10: \SystemRoot\System32\ntdll.dll:
-2ea0.4a10:     CreationTime:    2022-07-12T20:29:44.677364000Z
-2ea0.4a10:     LastWriteTime:   2022-07-12T20:29:44.708607600Z
-2ea0.4a10:     ChangeTime:      2022-07-13T05:52:06.043910400Z
-2ea0.4a10:     FileAttributes:  0x20
-2ea0.4a10:     Size:            0x207e08
-2ea0.4a10:     NT Headers:      0xe0
-2ea0.4a10:     Timestamp:       0x5398ab6f
-2ea0.4a10:     Machine:         0x8664 - amd64
-2ea0.4a10:     Timestamp:       0x5398ab6f
-2ea0.4a10:     Image Version:   10.0
-2ea0.4a10:     SizeOfImage:     0x209000 (2134016)
-2ea0.4a10:     Resource Dir:    0x194000 LB 0x73528
-2ea0.4a10:     [Version info resource found at 0xd8! (ID/Name: 0x1; SubID/SubName: 0x409)]
-2ea0.4a10:     [Raw version resource data: 0x1940f0 LB 0x380, codepage 0x0 (reserved 0x0)]
-2ea0.4a10:     ProductName:     Microsoft® Windows® Operating System
-2ea0.4a10:     ProductVersion:  10.0.22000.778
-2ea0.4a10:     FileVersion:     10.0.22000.778 (WinBuild.160101.0800)
-2ea0.4a10:     FileDescription: NT Layer DLL
-2ea0.4a10: \SystemRoot\System32\kernel32.dll:
-2ea0.4a10:     CreationTime:    2022-06-15T01:03:21.845857200Z
-2ea0.4a10:     LastWriteTime:   2022-06-15T01:03:21.857649500Z
-2ea0.4a10:     ChangeTime:      2022-07-12T20:31:06.134176300Z
-2ea0.4a10:     FileAttributes:  0x20
-2ea0.4a10:     Size:            0xc0058
-2ea0.4a10:     NT Headers:      0xf8
-2ea0.4a10:     Timestamp:       0xafec8296
-2ea0.4a10:     Machine:         0x8664 - amd64
-2ea0.4a10:     Timestamp:       0xafec8296
-2ea0.4a10:     Image Version:   10.0
-2ea0.4a10:     SizeOfImage:     0xbd000 (774144)
-2ea0.4a10:     Resource Dir:    0xbb000 LB 0x520
-2ea0.4a10:     [Version info resource found at 0x90! (ID/Name: 0x1; SubID/SubName: 0x409)]
-2ea0.4a10:     [Raw version resource data: 0xbb0b0 LB 0x3a4, codepage 0x0 (reserved 0x0)]
-2ea0.4a10:     ProductName:     Microsoft® Windows® Operating System
-2ea0.4a10:     ProductVersion:  10.0.22000.708
-2ea0.4a10:     FileVersion:     10.0.22000.708 (WinBuild.160101.0800)
-2ea0.4a10:     FileDescription: Windows NT BASE API Client DLL
-2ea0.4a10: \SystemRoot\System32\KernelBase.dll:
-2ea0.4a10:     CreationTime:    2022-07-12T20:29:45.271215900Z
-2ea0.4a10:     LastWriteTime:   2022-07-12T20:29:45.364950400Z
-2ea0.4a10:     ChangeTime:      2022-07-13T05:52:28.840265500Z
-2ea0.4a10:     FileAttributes:  0x20
-2ea0.4a10:     Size:            0x380268
-2ea0.4a10:     NT Headers:      0xf8
-2ea0.4a10:     Timestamp:       0x960371d1
-2ea0.4a10:     Machine:         0x8664 - amd64
-2ea0.4a10:     Timestamp:       0x960371d1
-2ea0.4a10:     Image Version:   10.0
-2ea0.4a10:     SizeOfImage:     0x379000 (3641344)
-2ea0.4a10:     Resource Dir:    0x34a000 LB 0x548
-2ea0.4a10:     [Version info resource found at 0x90! (ID/Name: 0x1; SubID/SubName: 0x409)]
-2ea0.4a10:     [Raw version resource data: 0x34a0b0 LB 0x3bc, codepage 0x0 (reserved 0x0)]
-2ea0.4a10:     ProductName:     Microsoft® Windows® Operating System
-2ea0.4a10:     ProductVersion:  10.0.22000.795
-2ea0.4a10:     FileVersion:     10.0.22000.795 (WinBuild.160101.0800)
-2ea0.4a10:     FileDescription: Windows NT BASE API Client DLL
-2ea0.4a10: \SystemRoot\System32\apisetschema.dll:
-2ea0.4a10:     CreationTime:    2021-06-05T12:04:59.928787900Z
-2ea0.4a10:     LastWriteTime:   2021-06-05T12:04:59.928787900Z
-2ea0.4a10:     ChangeTime:      2022-07-12T20:31:06.108268500Z
-2ea0.4a10:     FileAttributes:  0x20
-2ea0.4a10:     Size:            0x24150
-2ea0.4a10:     NT Headers:      0xc8
-2ea0.4a10:     Timestamp:       0x68d1dbaf
-2ea0.4a10:     Machine:         0x8664 - amd64
-2ea0.4a10:     Timestamp:       0x68d1dbaf
-2ea0.4a10:     Image Version:   10.0
-2ea0.4a10:     SizeOfImage:     0x23000 (143360)
-2ea0.4a10:     Resource Dir:    0x22000 LB 0x408
-2ea0.4a10:     [Version info resource found at 0x48! (ID/Name: 0x1; SubID/SubName: 0x409)]
-2ea0.4a10:     [Raw version resource data: 0x22060 LB 0x3a8, codepage 0x0 (reserved 0x0)]
-2ea0.4a10:     ProductName:     Microsoft® Windows® Operating System
-2ea0.4a10:     ProductVersion:  10.0.22000.1
-2ea0.4a10:     FileVersion:     10.0.22000.1 (WinBuild.160101.0800)
-2ea0.4a10:     FileDescription: ApiSet Schema DLL
+30c0.d28: Log file opened: 6.1.34r150636 g_hStartupLog=0000000000000088 g_uNtVerCombined=0xa055f000
+30c0.d28: \SystemRoot\System32\ntdll.dll:
+30c0.d28:     CreationTime:    2022-07-12T20:29:44.677364000Z
+30c0.d28:     LastWriteTime:   2022-07-12T20:29:44.708607600Z
+30c0.d28:     ChangeTime:      2022-07-13T05:52:06.043910400Z
+30c0.d28:     FileAttributes:  0x20
+30c0.d28:     Size:            0x207e08
+30c0.d28:     NT Headers:      0xe0
+30c0.d28:     Timestamp:       0x5398ab6f
+30c0.d28:     Machine:         0x8664 - amd64
+30c0.d28:     Timestamp:       0x5398ab6f
+30c0.d28:     Image Version:   10.0
+30c0.d28:     SizeOfImage:     0x209000 (2134016)
+30c0.d28:     Resource Dir:    0x194000 LB 0x73528
+30c0.d28:     [Version info resource found at 0xd8! (ID/Name: 0x1; SubID/SubName: 0x409)]
+30c0.d28:     [Raw version resource data: 0x1940f0 LB 0x380, codepage 0x0 (reserved 0x0)]
+30c0.d28:     ProductName:     Microsoft® Windows® Operating System
+30c0.d28:     ProductVersion:  10.0.22000.778
+30c0.d28:     FileVersion:     10.0.22000.778 (WinBuild.160101.0800)
+30c0.d28:     FileDescription: NT Layer DLL
+30c0.d28: \SystemRoot\System32\kernel32.dll:
+30c0.d28:     CreationTime:    2022-06-15T01:03:21.845857200Z
+30c0.d28:     LastWriteTime:   2022-06-15T01:03:21.857649500Z
+30c0.d28:     ChangeTime:      2022-07-12T20:31:06.134176300Z
+30c0.d28:     FileAttributes:  0x20
+30c0.d28:     Size:            0xc0058
+30c0.d28:     NT Headers:      0xf8
+30c0.d28:     Timestamp:       0xafec8296
+30c0.d28:     Machine:         0x8664 - amd64
+30c0.d28:     Timestamp:       0xafec8296
+30c0.d28:     Image Version:   10.0
+30c0.d28:     SizeOfImage:     0xbd000 (774144)
+30c0.d28:     Resource Dir:    0xbb000 LB 0x520
+30c0.d28:     [Version info resource found at 0x90! (ID/Name: 0x1; SubID/SubName: 0x409)]
+30c0.d28:     [Raw version resource data: 0xbb0b0 LB 0x3a4, codepage 0x0 (reserved 0x0)]
+30c0.d28:     ProductName:     Microsoft® Windows® Operating System
+30c0.d28:     ProductVersion:  10.0.22000.708
+30c0.d28:     FileVersion:     10.0.22000.708 (WinBuild.160101.0800)
+30c0.d28:     FileDescription: Windows NT BASE API Client DLL
+30c0.d28: \SystemRoot\System32\KernelBase.dll:
+30c0.d28:     CreationTime:    2022-07-12T20:29:45.271215900Z
+30c0.d28:     LastWriteTime:   2022-07-12T20:29:45.364950400Z
+30c0.d28:     ChangeTime:      2022-07-13T05:52:28.840265500Z
+30c0.d28:     FileAttributes:  0x20
+30c0.d28:     Size:            0x380268
+30c0.d28:     NT Headers:      0xf8
+30c0.d28:     Timestamp:       0x960371d1
+30c0.d28:     Machine:         0x8664 - amd64
+30c0.d28:     Timestamp:       0x960371d1
+30c0.d28:     Image Version:   10.0
+30c0.d28:     SizeOfImage:     0x379000 (3641344)
+30c0.d28:     Resource Dir:    0x34a000 LB 0x548
+30c0.d28:     [Version info resource found at 0x90! (ID/Name: 0x1; SubID/SubName: 0x409)]
+30c0.d28:     [Raw version resource data: 0x34a0b0 LB 0x3bc, codepage 0x0 (reserved 0x0)]
+30c0.d28:     ProductName:     Microsoft® Windows® Operating System
+30c0.d28:     ProductVersion:  10.0.22000.795
+30c0.d28:     FileVersion:     10.0.22000.795 (WinBuild.160101.0800)
+30c0.d28:     FileDescription: Windows NT BASE API Client DLL
+30c0.d28: \SystemRoot\System32\apisetschema.dll:
+30c0.d28:     CreationTime:    2021-06-05T12:04:59.928787900Z
+30c0.d28:     LastWriteTime:   2021-06-05T12:04:59.928787900Z
+30c0.d28:     ChangeTime:      2022-07-12T20:31:06.108268500Z
+30c0.d28:     FileAttributes:  0x20
+30c0.d28:     Size:            0x24150
+30c0.d28:     NT Headers:      0xc8
+30c0.d28:     Timestamp:       0x68d1dbaf
+30c0.d28:     Machine:         0x8664 - amd64
+30c0.d28:     Timestamp:       0x68d1dbaf
+30c0.d28:     Image Version:   10.0
+30c0.d28:     SizeOfImage:     0x23000 (143360)
+30c0.d28:     Resource Dir:    0x22000 LB 0x408
+30c0.d28:     [Version info resource found at 0x48! (ID/Name: 0x1; SubID/SubName: 0x409)]
+30c0.d28:     [Raw version resource data: 0x22060 LB 0x3a8, codepage 0x0 (reserved 0x0)]
+30c0.d28:     ProductName:     Microsoft® Windows® Operating System
+30c0.d28:     ProductVersion:  10.0.22000.1
+30c0.d28:     FileVersion:     10.0.22000.1 (WinBuild.160101.0800)
+30c0.d28:     FileDescription: ApiSet Schema DLL

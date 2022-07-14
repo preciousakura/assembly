@@ -69,14 +69,9 @@ igctr:     inc si
            
 prtbc:     mov ax, "*"
            mov [di], ax
-
            inc cx
            inc di
-
            mov si, str
-           mov bx, 0
-           mov dx, 0
-           
            jmp prtfrag
 
 prtend:    pop dx
